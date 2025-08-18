@@ -1,0 +1,24 @@
+{
+    "name": "krushi-frontend",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "__LENOVO__",
+  
+  "private": true,
+  "scripts": {"start": "node src\/main.tsx.js",
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --port 5173"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "axios": "^1.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.3.0",
+    "@types/react": "^18.2.33",
+    "@types/react-dom": "^18.2.11"
+  }
+}

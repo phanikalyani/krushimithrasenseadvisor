@@ -1,0 +1,10 @@
+flask
+sentence-transformers
+torch
+numpy
+psycopg2-binary
+pgvector
+gtts
+gunicorn
+python-dotenv
+
