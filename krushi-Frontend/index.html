@@ -1,0 +1,40 @@
+*<!doctype html>
+<htmtl charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krushi Mithra Sense Advisor</title>
+    <style>
+      :root { --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#9ca3af; --accent:#22c55e; --danger:#ef4444; }
+      body { margin:0; font-family: system-ui, sans-serif; background:linear-gradient(180deg,#0f172a,#020617); color:var(--text); }
+      .container{ max-width:1000px; margin:0 auto; padding:24px; }
+      .card{ background:linear-gradient(180deg,#0b1220,#0e1726); border:1px solid #1f2937; border-radius:16px; padding:16px; box-shadow:0 10px 30px rgba(0,0,0,.3)}
+      .row{ display:flex; gap:16px; align-items:stretch; }
+      .col{ flex:1 }
+      .btn{ background:#111827; color:#e5e7eb; border:1px solid #374151; padding:10px 14px; border-radius:12px; cursor:pointer }
+      .btn.primary{ background:var(--accent); color:#04160a; border-color:#16a34a; font-weight:700 }
+      .btn.danger{ background:var(--danger); color:#fff; border-color:#b91c1c }
+      .btn:disabled{ opacity:.6; cursor:not-allowed }
+      .input, .select { width:100%; padding:10px 12px; border-radius:12px; border:1px solid #374151; background:#0b1220; color:#e5e7eb }
+      .chat{ height:520px; overflow:auto; background:#0a1220; border:1px solid #1f2937; border-radius:16px; padding:12px }
+      .msg{ margin:10px 0; padding:10px 12px; border-radius:12px; max-width:80% }
+      .msg.user{ background:#0e1a2e; border:1px solid #1f3a5f; margin-left:auto } lang = "en">
+  <head>
+    <me
+      .msg.bot{ background:#0f1b2f; border:1px solid #213a5b }
+      .avatar{ width:220px; height:220px; border-radius:50%; background: radial-gradient(circle at 70% 30%, #1d4ed8 0, #1e293b 60%); border:2px solid #334155; position:relative; overflow:hidden }
+      .face{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; }
+      .eyes{ position:absolute; top:80px; width:100%; display:flex; justify-content:space-around; padding:0 40px }
+      .eye{ width:26px; height:26px; background:#e5e7eb; border-radius:50%; position:relative }
+      .eye::after{ content:""; position:absolute; width:12px; height:12px; background:#0f172a; border-radius:50%; top:7px; left:7px; }
+      .mouth{ position:absolute; bottom:60px; left:50%; transform:translateX(-50%); width:80px; height:16px; background:#ef4444; border-radius:0 0 40px 40px; transition:height .08s ease; }
+      .mouth.talking{ height:44px }
+      .lang-pill{ font-size:12px; padding:4px 8px; border:1px solid #334155; border-radius:999px; color:#93c5fd; }
+      .source{ font-size:12px; color:#93a3b8 }
+      .row.wrap{ flex-wrap:wrap }
+      .gap-sm{ gap:8px }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
